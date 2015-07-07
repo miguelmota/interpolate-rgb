@@ -25,6 +25,7 @@
 
     var interpolate = function(t) {
       t = interpolateRGB._clipT(t);
+
       var r_3 = r_1 + t * (r_2 - r_1);
       var g_3 = g_1 + t * (g_2 - g_1);
       var b_3 = b_1 + t * (b_2 - b_1);
@@ -71,6 +72,7 @@
         }
       }
     }
+
     return rgb;
   };
 
@@ -90,6 +92,7 @@
     } else if (t < 0) {
       t = 0;
     }
+
     return t;
   };
 
