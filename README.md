@@ -32,7 +32,7 @@ console.log(interpolator(0.5)); // [127.5, 127.5, 127.5]
 
 # API
 
-##### `interpolateRGB(rgb1 /* array of rgb(a) values */, rgb2, t /* target value 0-1 */)`
+###### `interpolateRGB(rgb1 /* array of rgb(a) values */, rgb2, t /* target value 0-1 */)`
 
 # Test
 
