@@ -1,6 +1,6 @@
 {
   "name": "interpolate-rgb",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Interpolate RGB colors.",
   "main": "interpolate-rgb.js",
   "directories": {

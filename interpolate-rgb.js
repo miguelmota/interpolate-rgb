@@ -10,14 +10,6 @@
    * @return interpolated rgb color array
    */
   function interpolateRGB(rgb1, rgb2, t) {
-    if (!(Array.isArray(rgb1) && rgb1.length >= 3)) {
-      rgb1 = [0,0,0];
-    }
-
-    if (!(Array.isArray(rgb2) && rgb2.length >= 3)) {
-      rgb2 = [0,0,0];
-    }
-
     rgb1 = interpolateRGB._clipRGB(rgb1);
     rgb2 = interpolateRGB._clipRGB(rgb2);
 
@@ -32,10 +24,6 @@
     var a_2 = rgb2[3];
 
     var interpolate = function(t) {
-      if (typeof t !== 'number') {
-        t = 0;
-      }
-
       t = interpolateRGB._clipT(t);
       var r_3 = r_1 + t * (r_2 - r_1);
       var g_3 = g_1 + t * (g_2 - g_1);
@@ -64,6 +52,10 @@
    * @return clipped values
    */
   interpolateRGB._clipRGB = function(rgb) {
+    if (!(Array.isArray(rgb) && rgb.length >= 3)) {
+      rgb = [0,0,0];
+    }
+
     for (var i = 0; i < rgb.length; i++) {
       if (i < 3) {
         if (rgb[i] < 0) {
@@ -89,6 +81,10 @@
    * @return clipped value
    */
   interpolateRGB._clipT = function(t) {
+    if (typeof t !== 'number') {
+      t = 0;
+    }
+
     if (t > 1) {
       t = 1;
     } else if (t < 0) {

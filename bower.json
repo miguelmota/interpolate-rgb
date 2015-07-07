@@ -1,7 +1,7 @@
 {
   "name": "interpolate-rgb",
   "main": "interpolate-rgb.js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/miguelmota/interpolate-rgb",
   "authors": [
     "Miguel Mota <miguelmota2@gmail.com>"
