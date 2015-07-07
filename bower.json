@@ -1,0 +1,24 @@
+{
+  "name": "interpolate-rgb",
+  "main": "interpolate-rgb.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/miguelmota/interpolate-rgb",
+  "authors": [
+    "Miguel Mota <miguelmota2@gmail.com>"
+  ],
+  "description": "Interpolate RGB colors.",
+  "keywords": [
+    "interpoolate",
+    "rgb",
+    "color",
+    "scale"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "license": "MIT"
+}
